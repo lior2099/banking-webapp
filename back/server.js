@@ -18,11 +18,10 @@ app.use("/log-in", loginRouter);
 app.use("/user", dashBoardRouter);
 
 mongoose
-  .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log("MongoDB connection error:", err));
 
 app.listen(port, function () {
   console.log(`Server running at http://:localhost:${port}/`);
 });
-
