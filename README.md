@@ -22,6 +22,10 @@ Designed to showcase clean separation of client/server, simple auth/flows, and p
 
 ---
 
-## Demo 
-https://drive.google.com/file/d/1BtN5RhZOiz_508OELQUWLnuxmMsBftvR/view?usp=sharing
+## Demo Video
+
+You can watch a short walkthrough of the app here:
+
+▶ **[Banking Web App – Demo Video (Google Drive)](https://drive.google.com/file/d/1BtN5RhZOiz_508OELQUWLnuxmMsBftvR/view?usp=sharing)**
+
 
