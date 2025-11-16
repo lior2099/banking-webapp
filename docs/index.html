@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Banking Web App – Portfolio Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        padding: 2rem;
+        background: #0f172a;
+        color: #e5e7eb;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        width: 100%;
+        max-width: 960px;
+        background: rgba(15, 23, 42, 0.96);
+        border-radius: 18px;
+        padding: 2.2rem 2.4rem;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+      }
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 2rem;
+      }
+      .subtitle {
+        margin: 0;
+        color: #94a3b8;
+        font-size: 0.95rem;
+      }
+      .badges {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(30, 64, 175, 0.2);
+        border: 1px solid rgba(129, 140, 248, 0.4);
+        color: #c7d2fe;
+      }
+      .section {
+        margin-top: 1.6rem;
+      }
+      .section h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+      }
+      .section p {
+        margin: 0.2rem 0;
+        color: #cbd5f5;
+        font-size: 0.95rem;
+      }
+      .buttons {
+        margin-top: 1.4rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 1.1rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: transform 0.15s ease, box-shadow 0.15s ease,
+          background 0.15s ease, border-color 0.15s ease;
+        white-space: nowrap;
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #2563eb, #4f46e5);
+        color: #f9fafb;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+      }
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 35px rgba(37, 99, 235, 0.45);
+      }
+      .btn-ghost {
+        background: transparent;
+        color: #e5e7eb;
+        border-color: rgba(148, 163, 184, 0.6);
+      }
+      .btn-ghost:hover {
+        background: rgba(15, 23, 42, 0.8);
+        transform: translateY(-1px);
+      }
+      .video-wrapper {
+        margin-top: 1.6rem;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 14px;
+        border: 1px solid rgba(148, 163, 184, 0.45);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+        background: #020617;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .footer-text {
+        margin-top: 1.2rem;
+        font-size: 0.8rem;
+        color: #94a3b8;
+      }
+      .footer-text a {
+        color: #c4b5fd;
+        text-decoration: none;
+      }
+      .footer-text a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem;
+        }
+        .card {
+          padding: 1.5rem 1.2rem;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Banking Web App</h1>
+      <p class="subtitle">
+        Vanilla JS frontend · Express + MongoDB backend · JWT auth · simple
+        “banking” flows
+      </p>
+
+      <div class="badges">
+        <span class="badge">Vanilla JS</span>
+        <span class="badge">Express</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">JWT Auth</span>
+      </div>
+
+      <div class="section">
+        <h2>What this project shows</h2>
+        <p>
+          • A simple full-stack “banking” demo with clean separation between
+          client and API.
+        </p>
+        <p>
+          • Login / registration, dashboard with account info, and a basic
+          transfer flow.
+        </p>
+        <p>
+          • Pragmatic repo structure: <code>front/</code> for the UI,
+          <code>back/</code> for the API.
+        </p>
+      </div>
+
+      <div class="buttons">
+        <a
+          class="btn btn-primary"
+          href="https://drive.google.com/file/d/1BtN5RhZOiz_508OELQUWLnuxmMsBftvR/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▶ Watch Demo Video
+        </a>
+        <a
+          class="btn btn-ghost"
+          href="https://github.com/lior2099/banking-webapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Code on GitHub
+        </a>
+        <!-- If later you deploy the real app (e.g. Vercel), add a button here -->
+        <!-- <a class="btn btn-ghost" href="https://your-live-app-url" target="_blank" rel="noopener noreferrer">
+        Open Live App
+      </a> -->
+      </div>
+
+      <div class="section">
+        <h2>Demo (embedded)</h2>
+        <p>
+          Short walkthrough: open the app, log in / register, see the dashboard,
+          and perform a sample transfer.
+        </p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://drive.google.com/file/d/MO_Bank_Demo/preview"
+            allow="autoplay"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        Repository:
+        <a href="https://github.com/lior2099/banking-webapp" target="_blank"
+          >lior2099/banking-webapp</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
