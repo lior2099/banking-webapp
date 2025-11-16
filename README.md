@@ -7,10 +7,10 @@ Designed to showcase clean separation of client/server, simple auth/flows, and p
 
 ## Features (high level)
 
-- Auth (sign-up / sign-in) 
-- Accounts dashboard (balances, recent activity)
-- Transfer flow (basic validations)
-- Responsive UI (vanilla HTML/CSS/JS)
+- Auth  
+- Accounts dashboard 
+- Transfer flow 
+- Responsive UI 
 
 ---
 
